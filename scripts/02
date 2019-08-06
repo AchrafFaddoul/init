@@ -1,0 +1,7 @@
+#!/bin/bash
+if(pgrep -u $1  > /dev/null 2> /dev/null)
+then
+	kill `pgrep -u $1`
+fi
+
+deluser $1 > /dev/null 2> /dev/null

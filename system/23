@@ -1,0 +1,14 @@
+SSH SESSION
+1. find the ip adress using the cmd <ip a> in debian os.
+2. find the username using <echo $USER> cmd.
+3. run the cmd:
+	ssh username@ip_adress
+
+Graphic Session
+1. make sure that "X11forwarding" is set to "yes" on the path
+	/etc/ssh/sshd_config, else set it on the active mode "yes" also 
+	if the line is commented make sure to uncomment it by removing 
+    the hashtag.
+2. find the ip adress and the username using the same commands.
+3. run the following cmd:
+	ssh -X username@ip_adress

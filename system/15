@@ -1,0 +1,1 @@
+pkill tail -f /var/log/syslog
